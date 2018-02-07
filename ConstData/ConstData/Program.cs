@@ -22,7 +22,16 @@ namespace ConstData
 
     class MyMathClass
     {
-        public const double PI = 3.14;
+        public static readonly double PI = 3.14;
+    }
+
+    class MyMathClass_2
+    {
+        public static readonly double PI;
+        static MyMathClass_2()
+        {
+            PI = 3.14;
+        }
     }
 
 
